@@ -1,6 +1,5 @@
 import fs from 'fs'
 import assert from 'assert'
-import * as foxUtils from 'fox-utils'
 import { is } from './util'
 
 import {
@@ -30,21 +29,6 @@ import {
 interface ISortPackageJsonFileAutoReturn {
   packageJsonPath: string
 }
-
-/**
- * @description finds the closes parent package.json file and sorts it
- */
-export async function sortPackageJsonFileAuto(): Promise<ISortPackageJsonFileAutoReturn> {
-  const { packageJsonPath } = await foxUtils.getProjectData()
-
-  // const packageJsonFile = await findParentPackageJson()
-  await sortPackageJsonFile(packageJsonPath)
-
-  return {
-    packageJsonPath
-  }
-}
-
 
 /**
  * @description sorts a particular package.json file
