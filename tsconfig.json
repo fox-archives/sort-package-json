@@ -1,0 +1,30 @@
+{
+  "compileOnSave": true,
+  "compilerOptions": {
+    "outDir": "build",
+    "sourceMap": true,
+    "target": "ES2019",
+    "module": "CommonJS",
+    "esModuleInterop": true,
+    "isolatedModules": true,
+    "strict": true,
+    "noImplicitAny": true,
+    "noImplicitThis": true,
+    "lib": [
+      "ESNext"
+    ],
+    "moduleResolution": "node",
+    "declaration": true,
+    "declarationMap": true,
+    "incremental": true,
+    "baseUrl": ".",
+    // linter checks / etc
+    "noFallthroughCasesInSwitch": false, // default
+    "noImplicitReturns": true,
+    "noUnusedLocals": false, // default
+    "noUnusedParameters": false,
+    "allowUnusedLabels": false, // default
+    "forceConsistentCasingInFileNames": true,
+    "useDefineForClassFields": true
+  }
+}
